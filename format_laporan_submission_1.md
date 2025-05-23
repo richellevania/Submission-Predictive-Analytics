@@ -267,7 +267,7 @@ weighted avg       0.80      0.81      0.80      5993
 ```
 
 
-Model menunjukkan performa yang baik dalam mengenali kelas mayoritas (tidak default), namun masih perlu peningkatan dalam mendeteksi kelas minoritas (default). Meskipun recall pada kelas 1 masih tergolong rendah (0.39), precision-nya cukup tinggi (0.63), yang berarti model mampu memberikan prediksi gagal bayar yang cukup akurat walaupun belum mencakup seluruh kasus gagal bayar.
+Berdasarkan hasil evaluasi, model setelah tuning menunjukkan peningkatan performa yang jelas dan menjadikannya model yang lebih baik secara keseluruhan. Peningkatan yang paling signifikan terlihat pada accuracy yang melonjak dari 0.7447 menjadi 0.81, serta weighted average F1-score yang naik dari 0.7581 menjadi 0.80, menunjukkan keseimbangan yang lebih baik antara presisi dan recall secara keseluruhan. Meskipun terdapat trade-off di mana recall untuk Class 1 menurun dari 0.6199 menjadi 0.39, hal ini diimbangi oleh peningkatan signifikan pada precision Class 1 dari 0.4448 menjadi 0.63, yang berarti prediksi Class 1 oleh model menjadi lebih akurat dan dapat diandalkan. Dengan demikian, meskipun ada penurunan dalam menangkap semua instansi Class 1, model yang sudah di-tuning jauh lebih baik dalam membuat prediksi yang benar secara umum dan memiliki kualitas prediksi Class 1 yang lebih tinggi.
 
 Penggunaan SMOTE membantu meningkatkan jumlah data pada kelas minoritas, tetapi trade-off antara precision dan recall masih menjadi tantangan utama dalam kasus ketidakseimbangan data seperti ini. (Contoh Prediksi):
 ```
