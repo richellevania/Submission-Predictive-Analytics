@@ -39,5 +39,5 @@ Untuk menjalankan atau mereplikasi proyek ini di lingkungan lokal Anda:
     ```
     Ikuti langkah-langkah di dalam notebook untuk menjalankan seluruh alur proyek.
 
-```
+
 **Richelle Vania Thionanda (MC172D5X1392)**
