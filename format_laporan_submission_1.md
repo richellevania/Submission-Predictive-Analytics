@@ -489,10 +489,14 @@ Loop digunakan untuk menampilkan hasil prediksi secara jelas untuk setiap sampel
     * Threshold digunakan   : 0.5
     * Kelas prediksi        : 1 (Gagal Bayar)
 
+![Visualisasi Prediksi](Visualisasi_Prediksi.png)
+
 Model ini menggunakan probabilitas dan ambang batas (threshold) 0.5 untuk menentukan klasifikasi. Sampel dengan probabilitas default di bawah 0.5 diklasifikasikan sebagai "Tidak Gagal Bayar", sedangkan sampel dengan probabilitas di atas atau sama dengan 0.5 diklasifikasikan sebagai "Gagal Bayar". Proses ini juga memastikan bahwa model yang dilatih dapat digunakan secara konsisten pada data baru, mulai dari pra-pemrosesan hingga inferensi akhir.
 
 ---
 
 ## Kesimpulan 
+Proyek ini berhasil mengembangkan model prediksi gagal bayar nasabah kartu kredit menggunakan Jaringan Saraf Tiruan (Neural Network) dengan data historis dari Kaggle, mencakup 30.000 baris dan 25 kolom. Proses persiapan data yang ekstensif, termasuk penghapusan 35 baris duplikat, penanganan outlier menggunakan IQR dan capping, normalisasi dengan StandardScaler, dan reduksi dimensi via PCA menjadi 15 komponen yang mempertahankan 95.91% variansi, sangat penting dalam mengoptimalkan kualitas data. Implementasi SMOTE untuk mengatasi ketidakseimbangan kelas—menyamakan jumlah sampel menjadi 14.001 per kelas—serta penggunaan callback seperti EarlyStopping dan ReduceLROnPlateau, menunjukkan upaya serius dalam membangun model yang robust.
 
+Meskipun akurasi model meningkat signifikan dari 75.96% menjadi 82% setelah tuning, terdapat trade-off yang perlu dicermati, terutama pada performa kelas minoritas ("Gagal Bayar"). F1-Score untuk kelas ini sedikit menurun dari 0.5265 menjadi 0.48. Peningkatan presisi untuk kelas "Gagal Bayar" dari 0.4665 menjadi 0.66 mengindikasikan model lebih akurat dalam prediksi positif, namun penurunan recall yang tajam dari 0.6041 menjadi 0.37 menunjukkan bahwa model kini melewatkan lebih banyak kasus gagal bayar yang sebenarnya. Hal ini mengisyaratkan bahwa meskipun model lebih presisi dalam identifikasi, sensitivitasnya terhadap kasus gagal bayar yang sebenarnya berkurang, dan perlu pertimbangan lebih lanjut mengenai penyesuaian threshold atau strategi balancing data untuk kebutuhan bisnis yang mengedepankan deteksi tinggi terhadap risiko gagal bayar.
 
