@@ -1,6 +1,5 @@
 # Submission-Predictive-Analytics
 [![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Repositori ini berisi proyek Machine Learning yang berfokus pada prediksi gagal bayar (default) kartu kredit. Proyek ini menggunakan teknik Deep Learning (Neural Network) untuk menganalisis data historis nasabah dan memprediksi kemungkinan mereka akan mengalami gagal bayar pada bulan berikutnya.
 
